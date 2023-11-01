@@ -9,6 +9,7 @@ using System.Linq;
 
 class Programm
 {
+    //   Первое меню метод позвоюляющий выбрать готовый массив или выбрать самостоятельный ввод массива
     public static void Main(string[] args)
     {
         Console.Clear();
@@ -35,6 +36,7 @@ class Programm
         }
     }
 
+    //   Метод самостоятельного ввода массива
     static void SelfInput()
     {
         Console.WriteLine("Введите элементы массива через запятую, затем нажмите Enter:");
@@ -45,13 +47,13 @@ class Programm
         Console.WriteLine("Результат:");
         Console.WriteLine(string.Join(", ", resultArray));
     }
-
+    // Метод фильтрации выбранного массива
     static string[] FilterArray(string[] inputArray)
     {
         var filteredArray = inputArray.Where(item => item.Trim().Length <= 3).ToArray();
         return filteredArray;
     }
-
+    //  Второе меню - выбор заранее заготовленных массивов
     static void MenuTwo()
     {
         Console.Clear();
@@ -59,14 +61,14 @@ class Programm
         Console.WriteLine("*                                                                  *");
         Console.WriteLine("*                     Выберите номер массива                       *");
         Console.WriteLine("*                            Варианты:                             *");
-        Console.WriteLine("*  1 - Массив [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]        *");
-        Console.WriteLine("*  2 - Массив [“1234”, “1567”, “-2”, “computer science”] → [“-2”]  *");
-        Console.WriteLine("*  3 - Массив [“Russia”, “Denmark”, “Kazan”] → []                  *");
+        Console.WriteLine("*      1 - Массив [“Hello”, “2”, “world”, “:-)”]                   *");
+        Console.WriteLine("*      2 - Массив [“1234”, “1567”, “-2”, “computer science”]       *");
+        Console.WriteLine("*      3 - Массив [“Russia”, “Denmark”, “Kazan”]                   *");
         Console.WriteLine("*                                                                  *");
         Console.WriteLine("********************************************************************");
         Console.WriteLine();
         Console.WriteLine("Введите вариант: ");
-        Console.WriteLine();
+        
 
         int answer2 = int.Parse(Console.ReadLine() ?? "");
         string[] arr1 = { "Hello", "2", "world", ":-)" };

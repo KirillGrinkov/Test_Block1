@@ -10,7 +10,7 @@ using System.Linq;
 class Programm
 {
     //   Первое меню метод позвоюляющий выбрать готовый массив или выбрать самостоятельный ввод массива
-    public static void Main(string[] args)
+    public static void MenuOne(string[] args)
     {
         Console.Clear();
         Console.WriteLine("********************************MENU********************************");

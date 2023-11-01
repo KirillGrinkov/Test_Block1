@@ -24,8 +24,38 @@
 
 # Решение 
 
+<span style="color:Green">1. Создать репозиторий на GitHub
+
+Вы находитесь в репозитории [Test_Block1](https://github.com/KirillGrinkov/Test_Block1/tree/main)
+
+<span style="color:Green">2. Нарисовать блок-схему алгоритма (можно обойтись блок-схемой основной содержательной части, если вы выделяете её в отдельный метод)<span> 
+
+![Diagram](Diagram_Test_Block1.png)
+
+<span style="color:Green">3. Снабдить репозиторий оформленным текстовым описанием решения (файл README.md)<span> 
+
+Файл **README** можно найти по этой [ссылке](https://github.com/KirillGrinkov/Test_Block1/blob/main/README.md)
+
+<span style="color:Green">4. Написать программу, решающую поставленную задачу <span>  
+
+Первое меню,в нем выбираются варианты взаимодействия с программой 
+![FirstMenu](/FirstMenu.png)
+
+В случае выбора первого варианта, (самостоятельного введения массива) предлагается ввести переменные любово вида через запятую
+![SelfInput](/SelfInput.png)
+
+Если же выбор сделан в пользу второго пункта, пользователю даются на выбор 3 заранее заготовленных массива 
+![ArrayMenu](/ArrayMenu.png)
+
+Код программы:
+
+![ProgramCode](ProgramCode.png)
 
 
-![FirstMenu](FirstMenu.png)
-![ArrayMenu](ArrayMenu.png)
-![SelfInput](SelfInput.png)
+<span style="color:Green">5. Использовать контроль версий в работе над этим небольшим проектом (не должно быть так, что всё залито одним коммитом, как минимум этапы 2, 3, и 4 должны быть расположены в разных коммитах)<span> 
+
+![gitLog](gitLog.png)
+
+
+
+
